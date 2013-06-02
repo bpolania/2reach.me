@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "2reachme": {
+            "applicationId": "yeBH5ZCBpbVuH1K5WGAeS23EY9MY2YbJAbqMB70h", 
+            "masterKey": "6R0ZWqRq42Ne2RmLk2ciW81MaDN1Dmqpa6O1l3nv"
+        }, 
+        "_default": {
+            "link": "2reachme"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.7"
+    }
+}
