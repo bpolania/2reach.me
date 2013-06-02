@@ -32,6 +32,16 @@
      object:nil];
     
     
+    UIImageView*imageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 548)];
+    [imageView setImage:[UIImage imageNamed:@"splash.png"]];
+    [self.view addSubview:imageView];
+    [self.view bringSubviewToFront:imageView];
+
+    
+    //now fade out splash image
+    [UIView transitionWithView:self.view duration:5.0f options:UIViewAnimationOptionTransitionNone animations:^(void){imageView.alpha=0.0f;} completion:^(BOOL finished){[imageView removeFromSuperview];}];
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
